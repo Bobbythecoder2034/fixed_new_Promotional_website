@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+header > h1{
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: .6px;
+    word-spacing: 7px;
+}
+img{
+    width: 15rem;
+}
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: #373854;
+    font-size: large;
+}
+.container{
+    max-width: 900px;
+    margin: 2rem auto;
+    padding:0 1rem;
+}
+h1{
+    letter-spacing: 0.3px;
+}
+.card{
+    background: linear-gradient(rgba(20, 23, 151, 0.03)rgba(255,255,255,0.03));
+    border: 1px solid gray;
+}
+label{
+    display: grid;
+    gap: 0.25rem;
+    font: 0.95rem;
+    color: #c8dff0;
+}
+input{
+    padding: 0.6rem 0.7rem;
+    border-radius: 10px;
+    border: 1px solid #8ca3b4;
+}
+
+@media (max-width: 640px){
+    .grid{
+        grid-template-columns:  1fr;
+    }
+}

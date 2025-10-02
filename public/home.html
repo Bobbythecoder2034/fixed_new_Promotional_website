@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col items-center">
+    <header id="header" class="bg-[#070816] w-full flex flex-col items-center p-5">
+        <h1 class="text-6xl font-bold">
+            Hallownest Plush Emporium
+        </h1>
+    </header>
+    <main class="pt-5 flex flex-row flex-wrap justify-center p-3">
+        
+        <aside id="images1">
+            <img src="./images/hollow-knight.png" alt="hollow knight">
+            <img src="./images/quirrel.png" alt="quirrel">
+            <img src="./images/hornet.png" alt="hornet">
+            <img src="./images/knight.png" alt="knight">
+        </aside>
+        <section id="form-holder" class="flex flex-col items-center w-180">
+            <div id="" class="flex flex-wrap p-4 text-center">
+                Hallownest Plush Emporium offers fans a radiant showcase of collectible plushies inspired by Hollow Knight, featuring iconic characters like The Knight, Hornet, and Cornifer in lovingly detailed designs. Visitors discover adorable plush creations that evoke the magic, mystery, and charm of Hallownest with premium features such as magnetic accessories, posable limbs, and soft, cuddly fabrics—ideal for gamers, collectors, and dreamers alike. We invite everyone to embrace their favorite Hollow Knight companions and add a legendary touch to their everyday world.
+            </div>
+            <section class="mr-30 ml-30">
+                <h1>Student Sign-Up</h1>
+                <form method="POST" action="/submissions" id="submission-form" class="flex flex-col">
+                    <div class="grid flex flex-col">
+                        <label>Full Name:
+                            <input type="text" name="name" required placeholder="Enter name here">
+                        </label>
+                        <label>Email:
+                            <input type="email" name="email" required placeholder="Enter email here">
+                        </label>
+                        <label>Do you want more information or a newsletter:
+                            <input type="text" name="newsOrInfo" required placeholder='Please enter "info" or "news"'>
+                        </label>
+                    </div>
+                    <button type="submit">Submit Form</button>
+                </form>
+            </section>
+        </section>
+        <aside id="images2 flex ">
+            <img src="./images/Cornifer.webp" alt="cornifer">
+            <img src="./images/grub.png" alt="grub">
+            <img src="./images/lost_kin.png" alt="lost_kin">
+            <img src="./images/shade.png" alt="shade">
+        </aside>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

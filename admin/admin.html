@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/admin/css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col items-center">
+    <header id="header" class="bg-[#070816] w-full flex flex-col items-center p-5">
+        <h1 class="text-6xl font-bold">
+            Hallownest Plush Emporium Admin
+        </h1>
+    </header>
+    <main class="pt-5 flex flex-col flex-wrap justify-center p-3">
+        <h1>Awaiting Approval</h1>
+        <section id="users" class="flex flex-row flex-wrap justify-center">
+            
+        </section>
+        <h1>Approved</h1>
+        <section id="realUsers" class="flex flex-row flex-wrap justify-center">
+            
+        </section>
+        <section id="forms-holder">
+            <div id="delete-form">
+                <h1>Deletion</h1>
+                <form action="/admin" method="DELETE">
+                    <input type="text" required placeholder="userID">
+                    <button type="submit">Delete</button>
+                </form>
+                
+            </div>
+            <div id="approve-form">
+                <h1>Approval</h1>
+                <form action="/admin/approve" method="POST">
+                    <input type="text" required placeholder="userID">
+                    <button type="submit">Approve</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <script src="./admin/node"></script>
+    <script src="./admin/script"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form method="POST" action="/admin">
+        <label>Admin Login
+            <input type="text" name="username" required placeholder="Username">
+            <input type="text" name="password" required placeholder="Password">
+        </label>
+       <button type="submit">login</button>
+    </form>
+    <form method="POST" action="/customer/special">
+        <label>User Login
+            <input type="text" name="name" required placeholder="Name">
+            <input type="text" name="email" required placeholder="Email">
+        </label>
+       <button type="submit">login</button>
+    </form>
+    <form method="POST" action="/home">
+        <label>Don't have an account?
+            <button type="submit">Make new account</button>
+        </label>
+    </form>
+</body>
+</html>
