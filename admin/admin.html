@@ -18,8 +18,9 @@
             Hallownest Plush Emporium Admin
         </h1>
     </header>
-    <main class="pt-5 flex flex-col flex-wrap justify-center p-3">
+    <main class="pt-5 flex flex-col flex-wrap justify-center p-3 text-center">
         <h1>Awaiting Approval</h1>
+        <img src="./border/eyes" alt="Eyes" class="ml-11">
         <section id="users" class="flex flex-row flex-wrap justify-center">
             
         </section>
@@ -27,23 +28,7 @@
         <section id="realUsers" class="flex flex-row flex-wrap justify-center">
             
         </section>
-        <section id="forms-holder">
-            <div id="delete-form">
-                <h1>Deletion</h1>
-                <form action="/admin" method="DELETE">
-                    <input type="text" required placeholder="userID">
-                    <button type="submit">Delete</button>
-                </form>
-                
-            </div>
-            <div id="approve-form">
-                <h1>Approval</h1>
-                <form action="/admin/approve" method="POST">
-                    <input type="text" required placeholder="userID">
-                    <button type="submit">Approve</button>
-                </form>
-            </div>
-        </section>
+        
     </main>
     
     <script src="./admin/node"></script>

@@ -52,7 +52,7 @@ input{
     }
 }
 .card{
-    background-color: rgb(94, 213, 148);
+    background-color: rgb(74, 76, 136);
     border-radius: 15px;
     width: 13rem;
     display: flex;
@@ -65,7 +65,7 @@ input{
 }
 .title{
     font-size: xx-large;
-    background-color: rgb(79, 180, 124);
+    background-color: rgb(41, 33, 87);
     border-radius: 15px;
     width: 15rem;
     text-wrap: wrap;
@@ -83,4 +83,6 @@ section > p{
 }
 button{
     border: 1px black solid;
+    margin: 2px;
+    padding: 1px;
 }

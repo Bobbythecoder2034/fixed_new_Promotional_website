@@ -117,6 +117,13 @@ app.get("/admin/data/notApproved", async (req, res) => {
     res.status(500).json({ error: "Failed to read submissions" });
   }
 });
+app.get("/border/eyes", async (req, res) => {
+  try {
+    res.sendFile(path.join(__dirname, "/admin/admin_images/border.png"));
+  } catch (err) {
+    console.error(err);
+  }
+});
 
 app.get("/admin/data/real", async (req, res) => {
   try {
