@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "pimzhd0pmgsj3viq",
+    "name": "Luigi",
+    "email": "luigi@time.com",
+    "newsOrInfo": "info",
+    "status": "new"
+  },
+  {
+    "id": "bscsaabbmgsj4f3j",
+    "name": "John",
+    "email": "john@john.org",
+    "newsOrInfo": "info",
+    "status": "new"
+  }
+]
